@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');/*это css стиль находиться в гугле по поиску "Google font css api"*/
+
+
+body{
+    background: linear-gradient(90deg, #0A6394 0%, #2B2323 100%);
+    font-family: Roboto, serif;
+}
+
+p{
+    color: aquamarine ;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+.navbar-nav .nav-link.active{
+    color: white;
+}
+.navbar-brand img{
+    width: 40px;
+
+}
+.navbar-toggler{
+    background-color: rgb(174, 177, 174);
+}
+.sidebar{
+       color: aquamarine;
+    background: linear-gradient(270deg, #0A6394 0%, #2B2323 100%);
+}
+.card{
+    color: aquamarine;
+    background: linear-gradient(270deg, #0A6394 0%, #2B2323 100%);
+}
+.card a{
+    text-decoration: none;/*убирает нижнее подчёркивание у сылок*/
+    color: aquamarine;
+}
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto; /*выравнивание текста по центру  */
+}
+footer,
+.btn-outline-primary{
+    background: linear-gradient(270deg, #0A6394 0%, #2B2323 100%);
+
+}
+.media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+@media (max-width: 755px){
+    .carousel-indicators{
+        display: none;
+    }
+}
