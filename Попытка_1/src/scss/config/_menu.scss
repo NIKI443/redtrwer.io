@@ -1,0 +1,135 @@
+//Mеню бургер
+//ЗАПИСАТЬ ВСЕ КЛАССЫ КОТОРЫЕ Я ЗДЕСЬ ИСПОЛЬЗУЮ
+/*используемые классы:
+.header_burger - для кнопки 
+.header
+*/
+
+
+.header_burger {
+  body.lock{
+    overflow: hidden;
+  }
+
+    display: none;
+    margin-bottom: 13px;
+  }
+  .header{
+    margin-top: 10px;
+  }
+  
+  
+  @media (max-width: 1120px) {
+
+    .header{
+      margin-top: 10px;
+    }
+
+    .wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+      margin-left: 0;
+      margin-right: 6px;
+    }
+    .header-logo{
+      width: 170px;
+      height: 50px;
+      margin-left: 4px;
+     
+    }
+    .header_logo-link{
+      width: 100px;
+      height: 40px;
+    }
+  
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header_burger::after,
+  .header_burger::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+
+  }
+  .header_burger span {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+
+  }
+  
+  .header_burger::before {
+    top: 0;
+  }
+  .header_burger::after {
+    bottom: 0;
+
+  }
+
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top: 9PX;
+  }
+
+
+  .header_burger.active span{
+    transform: scale(0);
+  }
+
+  
+  .header_burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9PX;
+  }
+  
+  .header_nav {
+    position: fixed;
+    overflow: auto;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    padding: 70px 10px 20px 10px;
+  }
+
+  .header_nav.active{
+    top: 0;
+    transition: all 0.6s ease 0s;
+  }
+
+
+  .menu_list{
+      display: block;
+  }
+  .menu_item{
+      margin-top: 20px;
+  }
+  }
+
+  @media (max-width: 450px) {
+
+    .header-logo{
+      width: 130px;
+      height: 43px;
+      margin-top: 5px;
+    }
+   
+    
+  }
+
+  
